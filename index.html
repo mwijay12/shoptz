@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop.TZ E-Commerce Showcase</title>
+	<link rel="stylesheet" href="css/ai-assistant.css">
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Shop.TZ E-Commerce Showcase</h1>
+		<div class="rootpage__info">
+			A premium fashion e-commerce storefront designed and developed by **Mwijay Davie** (Tanzania). 
+			Features clean responsive layouts, Montserrat typography, and an integrated **AI Personal Stylist Chatbot** with multi-key API rotation and Vercel Serverless security. Updated to 2026.
+		</div>
+		<h2>Core Layout Pages:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Home Storefront</a></li>
+			<li><a target="_blank" href="product-dtl.html">Product Details (Graphic T-Shirt)</a></li>
+			<li><a target="_blank" href="category.html">Category Filter Page</a></li>
+			<li><a target="_blank" href="cart.html">Shopping Cart</a></li>
+			<li><a target="_blank" href="checkout.html">Checkout Page</a></li>
+			<li><a target="_blank" href="order-success.html">Order Success / Confirmation</a></li>
+			<li><a target="_blank" href="stylist-room.html">AI Wardrobe Stylist Room (Interactive Canvas!) ⚡</a></li>
+		</ol>
+		<div class="rootpage__tnx" style="background: #2a66ff;">
+			<h2>Interactive AI Stylist</h2>
+			<p>Click the floating button in the bottom right corner of any page to open the Personal Stylist chatbot helper!</p>
+		</div>
+		<div class="rootpage__contacts" style="background: #10b981;">
+			<h2>Developer Contacts:</h2>
+			<p>Creator: Mwijay Davie</p>
+			<p>Email: <a href="mailto:mwijaydavie@gmail.com">mwijaydavie@gmail.com</a></p>
+			<p>Social Portfolio: <a href="https://github.com/mwijaydavie" target="_blank">GitHub Profile</a></p>
+		</div>
+	</div>
+	<script src="js/config.js"></script>
+	<script src="js/cart-manager.js"></script>
+	<script src="js/auth-modal.js"></script>
+	<script src="js/ai-rotation.js"></script>
+	<script src="js/ai-assistant.js"></script>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
