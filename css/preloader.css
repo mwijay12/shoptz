@@ -1,0 +1,71 @@
+/* ─── SHOP.TZ LUMINANCE INTRO PRELOADER DESIGN SYSTEM ─── */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap");
+
+#tz-luminance-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #333641;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.luminance-brand-text {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #ffffff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 7vw;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+  animation: tz-reveal 2500ms ease-in-out forwards 100ms,
+             tz-glow 2000ms linear infinite 1800ms;
+}
+
+.luminance-subtext {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  color: #a1a1aa;
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  animation: tz-subfade 1500ms ease forwards 1000ms;
+}
+
+@keyframes tz-reveal {
+  80% {
+    letter-spacing: 12px;
+  }
+  100% {
+    background-size: 300% 300%;
+    letter-spacing: 16px;
+  }
+}
+
+@keyframes tz-glow {
+  40% {
+    text-shadow: 0 0 16px #ffffff, 0 0 32px #10b981;
+  }
+}
+
+@keyframes tz-subfade {
+  to {
+    opacity: 0.8;
+  }
+}
+
+#tz-luminance-loader.loader-hidden {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}

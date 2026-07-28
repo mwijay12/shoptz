@@ -1,9 +1,7 @@
 // ─── SHOP.TZ ASSISTANT CONFIGURATION & CATALOG ───
 
 window.SHOP_CO_CONFIG = {
-  // Pre-configured fallback keys (exposed client-side for portfolio static hosting)
-  // ⚠️ API keys removed for security. Add your own keys via .env or localStorage.
-  // See .env.example for the required format.
+  // Safe client fallback keys container (Users can input keys in the AI drawer or rely on Vercel environment variables)
   fallbackKeys: {
     gemini: [],
     groq: [],
@@ -95,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
       el.childNodes.forEach(child => {
         if (child.nodeType === Node.TEXT_NODE) {
           let text = child.nodeValue;
-          // Match patterns like $260, -$113, $151, $145, $15, $565
           const matches = text.match(/-?\$[0-9,]+/g);
           if (matches) {
             matches.forEach(m => {
