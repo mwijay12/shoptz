@@ -1,14 +1,15 @@
 ## shoptz
-> High-tier digital infrastructure and product development by **Altraware Technologies**.
 
-### 🚀 What is this?
-*High-tier product development and infrastructure.*
+Project source code by **David Erick Mwijage** (Altraware Technologies).
 
-### 🏢 Company
-Developed by the Altraware Technologies Team.
-*   **David Erick Mwijage** - Systems Architect
-*   **Clemence W. N'gunda** - Co-Founder
+### Getting Started
+To run this project, clone the repository:
+```bash
+git clone https://github.com/mwijay12/shoptz.git
+cd shoptz
+npm install
+npm start
+```
 
----
-### 📄 License
-This project is **proprietary** to Altraware Technologies. See [LICENSE](LICENSE) for more details.
+### License
+This project is open-sourced under the **MIT License**. See [LICENSE](LICENSE) for details.
